@@ -22,7 +22,7 @@ function App() {
     <>
       <Particles init={particlesInit} options={{ preset: "fireworks" }} />
       <div className="flex flex-col items-center justify-center h-screen gap-4">
-        <span className="z-50 px-4 text-5xl font-bold text-center text-white md:text-7xl">
+        <span className="z-50 px-4 text-4xl font-bold text-center text-white md:text-7xl">
           <Typewriter
             words={newYearMessage}
             loop={false}
@@ -33,7 +33,7 @@ function App() {
             delaySpeed={1000}
           />
         </span>
-        <div className="z-50 font-bold text-white md:text-9xl text-7xl">
+        <div className="z-50 text-5xl font-bold text-white md:text-9xl">
           <Countdown
             date={Date.now() + timeLeft()}
             onComplete={() =>
